@@ -1,4 +1,3 @@
-
 package org.easycode.dominio;
 
 import java.io.Serializable;
@@ -27,7 +26,7 @@ public class Estudiante implements Serializable {
     @Column
     private String edad;
     @Column
-    private String fechaNacimiento;
+    private String fechaDeNacimiento;
     @Column
     private String carrera;
     @Column
@@ -38,12 +37,12 @@ public class Estudiante implements Serializable {
     public Estudiante() {
     }
 
-    public Estudiante(int codigoEstudiante, String nombre, String apellido, String edad, String fechaNacimiento, String carrera, String codigoTecnico, String codigoAcademico) {
+    public Estudiante(int codigoEstudiante, String nombre, String apellido, String edad, String fechaDeNacimiento, String carrera, String codigoTecnico, String codigoAcademico) {
         this.codigoEstudiante = codigoEstudiante;
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
-        this.fechaNacimiento = fechaNacimiento;
+        this.fechaDeNacimiento = fechaDeNacimiento;
         this.carrera = carrera;
         this.codigoTecnico = codigoTecnico;
         this.codigoAcademico = codigoAcademico;
@@ -81,12 +80,12 @@ public class Estudiante implements Serializable {
         this.edad = edad;
     }
 
-    public String getFechaNacimiento() {
-        return fechaNacimiento;
+    public String getFechaDeNacimiento() {
+        return fechaDeNacimiento;
     }
 
-    public void setFechaNacimiento(String fechaNacimiento) {
-        this.fechaNacimiento = fechaNacimiento;
+    public void setFechaDeNacimiento(String fechaDeNacimiento) {
+        this.fechaDeNacimiento = fechaDeNacimiento;
     }
 
     public String getCarrera() {
@@ -138,7 +137,7 @@ public class Estudiante implements Serializable {
 
     @Override
     public String toString() {
-        return "Estudiante{" + "codigoEstudiante=" + codigoEstudiante + ", nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", fechaNacimiento=" + fechaNacimiento + ", carrera=" + carrera + ", codigoTecnico=" + codigoTecnico + ", codigoAcademico=" + codigoAcademico + '}';
+        return "Estudiante{" + "codigoEstudiante=" + codigoEstudiante + ", nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", fechaDeNacimiento=" + fechaDeNacimiento + ", carrera=" + carrera + ", codigoTecnico=" + codigoTecnico + ", codigoAcademico=" + codigoAcademico + '}';
     }
 
 
